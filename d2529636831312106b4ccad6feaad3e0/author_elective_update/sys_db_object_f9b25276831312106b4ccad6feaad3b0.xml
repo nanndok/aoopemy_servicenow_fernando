@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>true</is_extendable>
+        <label>Training Courses</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1590789_aoopemy_training_courses</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:52:17</sys_created_on>
+        <sys_id>f9b25276831312106b4ccad6feaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training Courses</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_db_object_f9b25276831312106b4ccad6feaad3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 13:52:17</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1590789_aoopemy.training_adm" name="x_1590789_aoopemy.training_adm">2252d636831312106b4ccad6feaad320</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</application>
+        <file_path/>
+        <instance_id>908648a61b4dce1819254089bd4bcb5d</instance_id>
+        <instance_name>dev248733</instance_name>
+        <name>sys_db_object_f9b25276831312106b4ccad6feaad3b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><is_extendable>true</is_extendable><label>Training Courses</label><live_feed_enabled>false</live_feed_enabled><name>x_1590789_aoopemy_training_courses</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-28 13:52:17</sys_created_on><sys_id>f9b25276831312106b4ccad6feaad3b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Courses</sys_name><sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package><sys_policy/><sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope><sys_update_name>sys_db_object_f9b25276831312106b4ccad6feaad3b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-28 13:52:17</sys_updated_on><update_access>false</update_access><user_role display_value="x_1590789_aoopemy.training_adm" name="x_1590789_aoopemy.training_adm">2252d636831312106b4ccad6feaad320</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-370143541</payload_hash>
+        <record_name>Training Courses</record_name>
+        <reverted_from/>
+        <source>da52d636831312106b4ccad6feaad317</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:52:20</sys_created_on>
+        <sys_id>70e39ab6831312106b4ccad6feaad3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ad2f36760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 13:52:20</sys_updated_on>
+        <type>Table</type>
+        <update_guid>74e39ab699131210a567c52596dd64d0</update_guid>
+        <update_guid_history>74e39ab699131210a567c52596dd64d0:-370143541</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:26:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>489c03862b524f50a030937adc1eed10</sys_id>
+        <sys_metadata>f9b25276831312106b4ccad6feaad3b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training Courses</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_scope_delete display_value="">c0da6452bba0439b9a78310e0c7e5249</sys_scope_delete>
+        <sys_update_name>sys_db_object_f9b25276831312106b4ccad6feaad3b0</sys_update_name>
+        <sys_update_version display_value="sys_db_object_f9b25276831312106b4ccad6feaad3b0">70e39ab6831312106b4ccad6feaad3d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:26:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

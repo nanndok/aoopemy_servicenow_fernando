@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b1f4923a831312106b4ccad6feaad3ce" extends="task" label="Training Schedules" max_length="40" name="x_1590789_aoopemy_training_schedules" type="collection">
+        <element label="Training Date" max_length="40" name="training_date" type="glide_date_time"/>
+        <element label="Training Name" max_length="32" name="training_name" reference="x_1590789_aoopemy_training_records" type="reference"/>
+        <element label="Available Slots" max_length="10" name="available_slots" type="integer"/>
+        <element label="Training Instructor" max_length="32" name="training_instructor" reference="sys_user" type="reference"/>
+    </element>
+</database>

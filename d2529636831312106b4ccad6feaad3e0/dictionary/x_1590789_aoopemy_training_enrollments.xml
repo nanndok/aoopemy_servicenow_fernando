@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9d0e5232835312106b4ccad6feaad31d" extends="task" label="Training Enrollments" max_length="40" name="x_1590789_aoopemy_training_enrollments" type="collection">
+        <element label="Training Schedules" max_length="32" name="training_schedules" reference="x_1590789_aoopemy_training_schedules" type="reference"/>
+        <element label="Registered User" max_length="32" name="registered_user" reference="sys_user" type="reference"/>
+    </element>
+</database>
