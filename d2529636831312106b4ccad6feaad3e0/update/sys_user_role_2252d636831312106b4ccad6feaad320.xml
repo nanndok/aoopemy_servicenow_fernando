@@ -6,20 +6,20 @@
         <elevated_privilege>false</elevated_privilege>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_1590789_aoopemy.training_adm</name>
+        <name>x_1590789_aoopemy.training_administrator</name>
         <scoped_admin>false</scoped_admin>
-        <suffix>training_adm</suffix>
+        <suffix>training_administrator</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 13:45:36</sys_created_on>
         <sys_id>2252d636831312106b4ccad6feaad320</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1590789_aoopemy.training_adm</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1590789_aoopemy.training_administrator</sys_name>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>sys_user_role_2252d636831312106b4ccad6feaad320</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 13:45:36</sys_updated_on>
+        <sys_updated_on>2025-01-28 23:39:17</sys_updated_on>
     </sys_user_role>
 </record_update>

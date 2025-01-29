@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:40:24</sys_created_on>
+        <sys_id>8dee1a36835312106b4ccad6feaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590789_aoopemy_training_enrollments.x_1590789_aoopemy.training_enrollments_user</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_security_acl display_value="x_1590789_aoopemy_training_enrollments">85ee1a36835312106b4ccad6feaad368</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8dee1a36835312106b4ccad6feaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:40:24</sys_updated_on>
+        <sys_user_role display_value="x_1590789_aoopemy.training_enrollments_user" name="x_1590789_aoopemy.training_enrollments_user">34ee1a36835312106b4ccad6feaad317</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</application>
+        <file_path/>
+        <instance_id>908648a61b4dce1819254089bd4bcb5d</instance_id>
+        <instance_name>dev248733</instance_name>
+        <name>sys_security_acl_role_8dee1a36835312106b4ccad6feaad36b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-28 14:40:24</sys_created_on><sys_id>8dee1a36835312106b4ccad6feaad36b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1590789_aoopemy_training_enrollments.x_1590789_aoopemy.training_enrollments_user</sys_name><sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package><sys_policy/><sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope><sys_security_acl display_value="x_1590789_aoopemy_training_enrollments">85ee1a36835312106b4ccad6feaad368</sys_security_acl><sys_update_name>sys_security_acl_role_8dee1a36835312106b4ccad6feaad36b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-28 14:40:24</sys_updated_on><sys_user_role display_value="x_1590789_aoopemy.training_enrollments_user" name="x_1590789_aoopemy.training_enrollments_user">34ee1a36835312106b4ccad6feaad317</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1867675590</payload_hash>
+        <record_name>x_1590789_aoopemy_training_enrollments.x_1590789_aoopemy.training_enrollments_user</record_name>
+        <reverted_from/>
+        <source>da52d636831312106b4ccad6feaad317</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:40:24</sys_created_on>
+        <sys_id>cdee1a36835312106b4ccad6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ad5b390c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:40:24</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c1ee1a36d05312101252c47ec7452f6e</update_guid>
+        <update_guid_history>c1ee1a36d05312101252c47ec7452f6e:1867675590</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1590789_aoopemy_training_enrollments.x_1590789_aoopemy.training_enrollments_us">b92994c3839b12106b4ccad6feaad321</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 23:34:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1734136f82c94df08395756450b74900</sys_id>
+        <sys_metadata>8dee1a36835312106b4ccad6feaad36b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590789_aoopemy_training_enrollments.x_1590789_aoopemy.training_enrollments_user</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_parent display_value="x_1590789_aoopemy_training_enrollments">85ee1a36835312106b4ccad6feaad368</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_scope_delete display_value="">c0da6452bba0439b9a78310e0c7e5249</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_8dee1a36835312106b4ccad6feaad36b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_8dee1a36835312106b4ccad6feaad36b">cdee1a36835312106b4ccad6feaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 23:34:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
