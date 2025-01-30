@@ -3,6 +3,6 @@
         <element label="Training Date" max_length="40" name="training_date" type="glide_date_time"/>
         <element label="Training Name" max_length="32" name="training_name" reference="x_1590789_aoopemy_training_records" type="reference"/>
         <element label="Available Slots" max_length="10" name="available_slots" type="integer"/>
-        <element label="Training Instructor" max_length="32" name="training_instructor" reference="sys_user" type="reference"/>
+        <element label="Training Instructor" max_length="32" name="training_instructor" reference="sys_user" reference_qual="roles=x_1590789_aoopemy.training_instructor^EQ" reference_qual_condition="roles=x_1590789_aoopemy.training_instructor^EQ" type="reference"/>
     </element>
 </database>

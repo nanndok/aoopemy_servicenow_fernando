@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d4f91efa831312106b4ccad6feaad3b5" label="Training Records" max_length="40" name="x_1590789_aoopemy_training_records" type="collection">
-        <element label="Training Name" max_length="150" name="training_name" type="string"/>
+        <element display="true" label="Training Name" max_length="150" name="training_name" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Training Description" max_length="5000" name="training_description" type="string"/>
         <element label="Training Description EN" max_length="5000" name="training_description_en" type="string"/>

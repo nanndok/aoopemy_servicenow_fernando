@@ -6,7 +6,7 @@
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field>training_name</choice_field>
-        <choice_table>x_1590789_aoopemy_training_schedules</choice_table>
+        <choice_table>x_1590789_aoopemy_training_records</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -22,12 +22,12 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>training_schedules</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -39,10 +39,10 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>training_schedules</name>
+        <name>choose_the_training_that_you_want_to_enroll_in</name>
         <not_available_conversation>false</not_available_conversation>
         <order>10</order>
         <post_insert_script/>
@@ -77,16 +77,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-29 15:22:51</sys_created_on>
-        <sys_id>ed2a270f839312106b4ccad6feaad3a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-01-30 00:53:35</sys_created_on>
+        <sys_id>4ca435d3835f12106b4ccad6feaad30c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Choose the training that you want to enroll in:</sys_name>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
-        <sys_update_name>item_option_new_ed2a270f839312106b4ccad6feaad3a6</sys_update_name>
+        <sys_update_name>item_option_new_4ca435d3835f12106b4ccad6feaad30c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 15:22:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 00:58:50</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=ed2a270f839312106b4ccad6feaad3a6"/>
-    <fx_price action="delete_multiple" query="id=ed2a270f839312106b4ccad6feaad3a6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ca435d3835f12106b4ccad6feaad30c"/>
+    <fx_price action="delete_multiple" query="id=4ca435d3835f12106b4ccad6feaad30c"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price_if_checked</field>
-        <id>ed2a270f839312106b4ccad6feaad3a6</id>
+        <id>4ca435d3835f12106b4ccad6feaad30c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-29 15:22:51</sys_created_on>
-        <sys_id>7832bb4783d312106b4ccad6feaad362</sys_id>
+        <sys_created_on>2025-01-30 00:53:36</sys_created_on>
+        <sys_id>59d439d3835f12106b4ccad6feaad3e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 15:22:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 00:53:36</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>rec_price_if_checked</field>
-        <id>ed2a270f839312106b4ccad6feaad3a6</id>
+        <id>4ca435d3835f12106b4ccad6feaad30c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-29 15:22:51</sys_created_on>
-        <sys_id>3832bb4783d312106b4ccad6feaad361</sys_id>
+        <sys_created_on>2025-01-30 00:53:36</sys_created_on>
+        <sys_id>99d439d3835f12106b4ccad6feaad3e1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 15:22:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 00:53:36</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
