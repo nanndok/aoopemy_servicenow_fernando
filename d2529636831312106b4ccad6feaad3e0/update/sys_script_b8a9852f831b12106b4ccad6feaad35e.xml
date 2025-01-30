@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1590789_aoopemy_training_schedules</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1590789_aoopemy_training_schedules">training_nameISNOTEMPTY^training_dateISNOTEMPTY^EQ<item endquery="false" field="training_name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="training_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ValidadeTrainingSchedulerDate</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var  trainingName = current.getValue("training_name");
+	var  trainingDate = current.getValue("training_date");
+
+	var gr = new GlideRecord('x_1590789_aoopemy_training_schedules');
+	gr.addQuery('training_name', trainingName);
+	gr.addQuery('training_date', trainingDate);
+	gr.query();
+
+	if(gr.getRowCount() != 0){
+		gs.addErrorMessage("Já existe um treinamento do mesmo tipo na data selecionada. Por favor, escolha outra data.");
+		current.setAbortAction(true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:30:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8a9852f831b12106b4ccad6feaad35e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ValidadeTrainingSchedulerDate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_script_b8a9852f831b12106b4ccad6feaad35e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:32:14</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b8a9852f831b12106b4ccad6feaad35e"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b8a9852f831b12106b4ccad6feaad35e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:30:35</sys_created_on>
+        <sys_id>724b4daf831b12106b4ccad6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:30:35</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

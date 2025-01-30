@@ -5,8 +5,8 @@
         <cat_item display_value="Enroll in trainings">07656787839312106b4ccad6feaad3f0</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field>training_name</choice_field>
-        <choice_table>x_1590789_aoopemy_training_records</choice_table>
+        <choice_field/>
+        <choice_table/>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -18,11 +18,11 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path/>
-        <dynamic_value_field/>
+        <dynamic_value_dot_walk_path>training_date</dynamic_value_dot_walk_path>
+        <dynamic_value_field display_value="Choose the training that you want to enroll in:">b7fafddb835f12106b4ccad6feaad3ff</dynamic_value_field>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>training_schedules</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -33,23 +33,23 @@
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>x_1590789_aoopemy_training_schedules</lookup_table>
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>choose_the_training_that_you_want_to_enroll_in</name>
+        <name>training_schedules</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>10</order>
+        <order>20</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Choose the training that you want to enroll in:</question_text>
+        <question_text>Choose the date of the training below:</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -57,7 +57,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_1590789_aoopemy_training_enrollments</record_producer_table>
-        <reference/>
+        <reference>x_1590789_aoopemy_training_schedules</reference>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -77,16 +77,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 00:53:35</sys_created_on>
-        <sys_id>4ca435d3835f12106b4ccad6feaad30c</sys_id>
+        <sys_created_on>2025-01-30 01:57:08</sys_created_on>
+        <sys_id>7b620e17839f12106b4ccad6feaad3c5</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_name>Choose the training that you want to enroll in:</sys_name>
+        <sys_name>Choose the date of the training below:</sys_name>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
-        <sys_update_name>item_option_new_4ca435d3835f12106b4ccad6feaad30c</sys_update_name>
+        <sys_update_name>item_option_new_7b620e17839f12106b4ccad6feaad3c5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 00:58:50</sys_updated_on>
+        <sys_updated_on>2025-01-30 03:25:28</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=4ca435d3835f12106b4ccad6feaad30c"/>
-    <fx_price action="delete_multiple" query="id=4ca435d3835f12106b4ccad6feaad30c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b620e17839f12106b4ccad6feaad3c5"/>
+    <fx_price action="delete_multiple" query="id=7b620e17839f12106b4ccad6feaad3c5"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price_if_checked</field>
-        <id>4ca435d3835f12106b4ccad6feaad30c</id>
+        <id>7b620e17839f12106b4ccad6feaad3c5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 00:53:36</sys_created_on>
-        <sys_id>59d439d3835f12106b4ccad6feaad3e2</sys_id>
+        <sys_created_on>2025-01-30 01:57:08</sys_created_on>
+        <sys_id>88630e97839f12106b4ccad6feaad3aa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 00:53:36</sys_updated_on>
+        <sys_updated_on>2025-01-30 01:57:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>rec_price_if_checked</field>
-        <id>4ca435d3835f12106b4ccad6feaad30c</id>
+        <id>7b620e17839f12106b4ccad6feaad3c5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 00:53:36</sys_created_on>
-        <sys_id>99d439d3835f12106b4ccad6feaad3e1</sys_id>
+        <sys_created_on>2025-01-30 01:57:08</sys_created_on>
+        <sys_id>44630e97839f12106b4ccad6feaad3a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 00:53:36</sys_updated_on>
+        <sys_updated_on>2025-01-30 01:57:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
