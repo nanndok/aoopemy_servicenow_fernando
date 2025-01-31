@@ -40,15 +40,34 @@
     checkUserParticipationInTraining(trainingNameSysId, userId, trainingDate)
         .then(function(isUserAlreadyParticipate) {
             console.log("(Submit) - Valor de retorno da função: " + isUserAlreadyParticipate);
-
             if (isUserAlreadyParticipate === 'true') {
                 alert('Você já está matriculado neste treinamento. Não é possível se matricular novamente.');
                 //g_form.clearOptions('training_schedules');
                 //return false; // Impede o envio do formulário
             } else {
-				console.log("Usuário não está matriculado. Prosseguindo com a inscrição.");
-				g_scratchpad.isFormValid = true;
-                g_form.submit(actionName); // Envia o formulário manualmente
+				getSysIdToSubmitRecord(trainingNameSysId, trainingDate)
+				.then(function(setSchdulerSysId){
+					console.log("Valor do JSON " + setSchdulerSysId);
+					var jsonToString = JSON.parse(setSchdulerSysId);
+					console.log("Valor do array: " + jsonToString);
+					//console.log("Valor do JSON " + setSchdulerSysId);
+					//var stringToArray = jsonToString.split(",");
+					console.log("Valor do array 0 String: " + jsonToString[0]);
+					console.log("Valor do array 1 String: " + jsonToString[1]);
+					if(parseInt(jsonToString[1]) === 0) {
+						alert('As vagas para esse treinamento e/ou data já foram esgotadas.'); 
+					}else{
+						console.log("Usuário não está matriculado. Prosseguindo com a inscrição.");
+						console.log("(Submit) - SysId " + jsonToString[0]);
+						g_form.setValue('training_schedules_set', jsonToString[0]);
+
+						//g_form.save();
+						g_scratchpad.isFormValid = true;
+						g_form.submit(actionName);
+
+					}
+				});
+				 // Envia o formulário manualmente
 
                 // Continua com o envio do formulário
             
@@ -81,6 +100,23 @@ function checkUserParticipationInTraining(trainingNameSysId, userId, trainingDat
         });
     });
    
+}
+
+
+function getSysIdToSubmitRecord(trainingNameSysId, trainingDate) {
+    return new Promise(function(resolve, reject) {
+        var gaScheduler = new GlideAjax('AooPemyUtilsAjax');
+        gaScheduler.addParam('sysparm_name', 'getSchedulerSysId');
+        gaScheduler.addParam('sysparm_training_date', trainingDate);
+        gaScheduler.addParam('sysparm_training_name', trainingNameSysId);
+
+        gaScheduler.getXMLAnswer(function(registrationResponse) {
+            console.log("(Submit) Response: " + registrationResponse);
+            var arrayResponse = registrationResponse.split(',');
+            resolve(arrayResponse); // Resolve a Promise com a resposta
+        });
+    });
+   
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -88,7 +124,7 @@ function checkUserParticipationInTraining(trainingNameSysId, userId, trainingDat
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52296bef831752106b4ccad6feaad3cc</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>FieldRulesAjaxSubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
@@ -96,7 +132,7 @@ function checkUserParticipationInTraining(trainingNameSysId, userId, trainingDat
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>catalog_script_client_52296bef831752106b4ccad6feaad3cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-31 11:58:44</sys_updated_on>
+        <sys_updated_on>2025-01-31 14:31:21</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
