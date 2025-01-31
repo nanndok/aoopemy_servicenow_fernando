@@ -20,6 +20,10 @@
         <published_ref/>
         <script><![CDATA[function onSubmit() {
 	
+	if (g_scratchpad.isFormValid)
+        return true;
+	var actionName = g_form.getActionName();
+
    var trainingDate = g_form.getValue('training_schedules');
     console.log("Valor data função check: " + trainingDate);
 
@@ -39,20 +43,27 @@
 
             if (isUserAlreadyParticipate === 'true') {
                 alert('Você já está matriculado neste treinamento. Não é possível se matricular novamente.');
-                g_form.clearOptions('training_schedules');
-                return false; // Impede o envio do formulário
+                //g_form.clearOptions('training_schedules');
+                //return false; // Impede o envio do formulário
             } else {
+				console.log("Usuário não está matriculado. Prosseguindo com a inscrição.");
+				g_scratchpad.isFormValid = true;
+                g_form.submit(actionName); // Envia o formulário manualmente
+
                 // Continua com o envio do formulário
-                console.log("Usuário não está matriculado. Prosseguindo com a inscrição.");
-				formSubmitted = false;
-                return true;
+            
+				//formSubmitted = false;
+               	// return true;
             }
         })
         .catch(function(error) {
             console.error("Erro ao verificar participação do usuário: " + error);
             alert("Ocorreu um erro ao verificar sua matrícula. Tente novamente.");
-            return false; // Impede o envio do formulário em caso de erro
+            //return false; // Impede o envio do formulário em caso de erro
         });
+
+
+	return false;		
 }
 
 // Função assíncrona com Promise
@@ -77,7 +88,7 @@ function checkUserParticipationInTraining(trainingNameSysId, userId, trainingDat
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52296bef831752106b4ccad6feaad3cc</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>FieldRulesAjaxSubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
@@ -85,7 +96,7 @@ function checkUserParticipationInTraining(trainingNameSysId, userId, trainingDat
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>catalog_script_client_52296bef831752106b4ccad6feaad3cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-31 04:46:48</sys_updated_on>
+        <sys_updated_on>2025-01-31 11:58:44</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
