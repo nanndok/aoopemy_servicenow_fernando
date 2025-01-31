@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
-        <active>false</active>
+        <active>true</active>
         <api_name>x_1590789_aoopemy.AooPemyUtilsAjax</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
@@ -12,34 +12,78 @@
         <script><![CDATA[var AooPemyUtilsAjax = Class.create();
 AooPemyUtilsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
-    isTrainingDateAvailable: function() {
-	var  trainingName = this.getParameter("sysparm_training_name");
-	var  trainingDate = this.getParameter("sysparm_training_date");
-
+    getAvailableDates: function() {
+        var trainingNameSysId = this.getParameter('sysparm_training_name');
+        var dates = [];
+		
+        // Consulta a tabela de treinamentos para buscar as datas disponíveis
         var gr = new GlideRecord('x_1590789_aoopemy_training_schedules');
-        gr.addQuery('training_name', trainingName);
-        gr.addQuery('training_date', trainingDate);
+        gr.addQuery('training_name', trainingNameSysId);
+        gr.addQuery('training_date', '>', gs.endOfToday()); // Filtra apenas datas futuras
         gr.query();
 
-		gs.log("Excutei a query");
-		gs.info("Excutei a query");
-        return !gr.hasNext(); // Retorna true se não houver registros
-	},
+        while (gr.next()) {
+            var date = gr.getValue('training_date'); // Pega a data do treinamento
+            dates.push(date); // Adiciona a data ao array
+        }
+
+		gs.info("Date: "+ JSON.stringify(dates));
+        return JSON.stringify(dates); // Retorna as datas como uma string JSON
+    },
 	
+	getRegistrationCount: function() {
+        var trainingNameSysId = this.getParameter('sysparm_training_name');
+
+		gs.info(trainingNameSysId);
+        var userId = this.getParameter('sysparm_user');
+		gs.info(userId);
+
+        // Consulta a tabela de matrículas para contar as inscrições do usuário no curso
+        var gr = new GlideRecord('x_1590789_aoopemy_training_enrollments');
+        gr.addQuery('training_schedules.training_name', trainingNameSysId);
+        gr.addQuery('registered_user', userId);
+        gr.query();
+		
+		gs.info(gr.getRowCount());
+
+        return gr.getRowCount(); // Retorna o número de matrículas
+    },
+
+
+	isUserRegistered: function() {
+        
+		var trainingNameSysId = this.getParameter('sysparm_training_name');
+        var trainingDate = this.getParameter('sysparm_training_date');
+        var userId = this.getParameter('sysparm_user');
+
+
+		gs.info("Valor da data: " + trainingDate);
+        // Consulta a tabela de matrículas para verificar se o usuário já está matriculado
+        var gr = new GlideRecord('x_1590789_aoopemy_training_enrollments');
+        gr.addQuery('training_schedules.training_name', trainingNameSysId);
+        gr.addQuery('training_schedules.training_date', trainingDate);
+        gr.addQuery('registered_user', userId);
+        gr.query();
+
+
+		gs.info(gr.hasNext());
+        return gr.hasNext() ? 'true' : 'false'; // Retorna 'true' se o usuário já estiver matriculado
+    },
+
     type: 'AooPemyUtilsAjax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 12:45:19</sys_created_on>
         <sys_id>f99710a3835712106b4ccad6feaad38d</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>AooPemyUtilsAjax</sys_name>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
-        <sys_policy>read</sys_policy>
+        <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>sys_script_include_f99710a3835712106b4ccad6feaad38d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 17:28:21</sys_updated_on>
+        <sys_updated_on>2025-01-31 03:46:29</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>f99710a3835712106b4ccad6feaad38d</id>

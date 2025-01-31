@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>training_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Training Date</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   // Pega o valor do campo training_name
+    var trainingName = g_form.getValue('training_name');
+    var inputDate = g_form.getValue('training_date');
+    var inputDateToCompare = inputDate.split('-').reverse().join('-');
+
+    // Cria uma chamada GlideAjax para o Script Include
+    var ga = new GlideAjax('AooPemyUtils');
+    ga.addParam('sysparm_name', 'isTrainingDateAvailable'); // Método do Script Include
+    ga.addParam('sysparm_training_name', trainingName); // Parâmetro 1
+    ga.addParam('sysparm_training_date', inputDateToCompare); // Parâmetro 2
+    console.log(trainingName);
+    console.log(inputDate);
+    console.log(inputDateToCompare);
+
+/*
+	ga.getXML(callBackFunction);
+	function callBackFunction(response) {
+        var resposta = response.responseXML.documentElement.getAttribute("answer");
+		console.log(response);
+		console.log(resposta + " resposta");
+	}
+*/   
+    // Executa a chamada e processa a resposta
+    ga.getXMLAnswer(function(response) {
+        console.log('chegou aqui');
+        console.log(response);
+        if (response === 'false') { // Se já existir um registro
+            alert('Já existe um treinamento com o mesmo nome na data selecionada. Por favor, escolha outra data.');
+            g_form.setValue('training_date', ''); // Limpa o campo training_date
+			awnser = false;
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 14:12:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>849ae06b839712106b4ccad6feaad37a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Validate Training Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_script_client_849ae06b839712106b4ccad6feaad37a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:30:54</sys_updated_on>
+        <table>x_1590789_aoopemy_training_schedules</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</application>
+        <file_path/>
+        <instance_id>908648a61b4dce1819254089bd4bcb5d</instance_id>
+        <instance_name>dev248733</instance_name>
+        <name>sys_script_client_849ae06b839712106b4ccad6feaad37a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;training_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validate Training Date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   // Pega o valor do campo training_name
+    var trainingName = g_form.getValue('training_name');
+    var inputDate = g_form.getValue('training_date');
+    var inputDateToCompare = inputDate.split('-').reverse().join('-');
+
+    // Cria uma chamada GlideAjax para o Script Include
+    var ga = new GlideAjax('AooPemyUtils');
+    ga.addParam('sysparm_name', 'isTrainingDateAvailable'); // Método do Script Include
+    ga.addParam('sysparm_training_name', trainingName); // Parâmetro 1
+    ga.addParam('sysparm_training_date', inputDateToCompare); // Parâmetro 2
+    console.log(trainingName);
+    console.log(inputDate);
+    console.log(inputDateToCompare);
+
+/*
+	ga.getXML(callBackFunction);
+	function callBackFunction(response) {
+        var resposta = response.responseXML.documentElement.getAttribute("answer");
+		console.log(response);
+		console.log(resposta + " resposta");
+	}
+*/   
+    // Executa a chamada e processa a resposta
+    ga.getXMLAnswer(function(response) {
+        console.log('chegou aqui');
+        console.log(response);
+        if (response === 'false') { // Se já existir um registro
+            alert('Já existe um treinamento com o mesmo nome na data selecionada. Por favor, escolha outra data.');
+            g_form.setValue('training_date', ''); // Limpa o campo training_date
+			awnser = false;
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 14:12:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;849ae06b839712106b4ccad6feaad37a&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate Training Date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AooPemy" source="x_1590789_aoopemy"&gt;d2529636831312106b4ccad6feaad3e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AooPemy"&gt;d2529636831312106b4ccad6feaad3e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_849ae06b839712106b4ccad6feaad37a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 16:30:54&lt;/sys_updated_on&gt;&lt;table&gt;x_1590789_aoopemy_training_schedules&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-798254347</payload_hash>
+        <record_name>Validate Training Date</record_name>
+        <reverted_from/>
+        <source>0fa654c7831b12106b4ccad6feaad317</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:30:54</sys_created_on>
+        <sys_id>d75b8d23835b12106b4ccad6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b80d1d3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:30:54</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>5f5b8d23065b121062366767fb242d94</update_guid>
+        <update_guid_history>5f5b8d23065b121062366767fb242d94:-798254347,9d284d2f041b1210f7af2edf58ad98e7:694234728,f5f7452f211b1210a321c0d192b879ec:1169048377,1e970dab4b1b12100ee78cc34d705e37:2081227961,7d370dab751b12106938f3d413bb5f42:804909920,902681abc91b121070d61c35627e79bc:2077570908,ffc5412bf11b121046f3ec725ce174ef:-1740742426,84c44d2bcc1b1210f232a18ea81cd00e:401505510,9bd9bcab45d7121047619da4180e6ccb:1535283421,b8297c6bb7d71210dc7f14c8960cdc2e:-339777243,2d08f46b17d71210859a8800e4163982:898321701,930574a3afd712107841261345642983:-871994240,c0517cef11971210e841993dda46b0b8:913839927,e841346385d7121044f370c83c72ad58:682789998,3b9e64abed9712101a3f8976b7701df1:866844923,7b4ce06b6d9712103d93ebd43400e1c5:1647013288,b8cb68ab76971210f4b522dfcef06cca:423602206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 20:28:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>28d32d3a1da349fe93a2e654c98ee441</sys_id>
+        <sys_metadata>849ae06b839712106b4ccad6feaad37a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Training Date</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_parent display_value="Training Schedules">b1f4923a831312106b4ccad6feaad3ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_scope_delete display_value="">c0da6452bba0439b9a78310e0c7e5249</sys_scope_delete>
+        <sys_update_name>sys_script_client_849ae06b839712106b4ccad6feaad37a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_849ae06b839712106b4ccad6feaad37a">d75b8d23835b12106b4ccad6feaad395</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 20:28:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
