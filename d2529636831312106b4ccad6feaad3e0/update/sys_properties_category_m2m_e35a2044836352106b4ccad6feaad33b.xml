@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="AooPemy">3469ecc0836352106b4ccad6feaad329</category>
+        <order>100</order>
+        <property display_value="x_1590789_aoopemy.integration_host" name="x_1590789_aoopemy.integration_host">345aec04836352106b4ccad6feaad3e8</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-01 03:23:42</sys_created_on>
+        <sys_id>e35a2044836352106b4ccad6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590789_aoopemy.integration_host.AooPemy</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_e35a2044836352106b4ccad6feaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-01 03:23:42</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
