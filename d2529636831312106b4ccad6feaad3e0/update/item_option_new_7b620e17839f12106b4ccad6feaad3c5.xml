@@ -22,7 +22,7 @@
         <dynamic_value_field display_value="Choose the training that you want to enroll in:">b7fafddb835f12106b4ccad6feaad3ff</dynamic_value_field>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>training_schedules</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -39,10 +39,10 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>training_schedules</name>
+        <name>training_schedules_dates</name>
         <not_available_conversation>false</not_available_conversation>
         <order>20</order>
         <post_insert_script/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 01:57:08</sys_created_on>
         <sys_id>7b620e17839f12106b4ccad6feaad3c5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Choose the date of the training below:</sys_name>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>item_option_new_7b620e17839f12106b4ccad6feaad3c5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 22:44:14</sys_updated_on>
+        <sys_updated_on>2025-01-31 16:29:04</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

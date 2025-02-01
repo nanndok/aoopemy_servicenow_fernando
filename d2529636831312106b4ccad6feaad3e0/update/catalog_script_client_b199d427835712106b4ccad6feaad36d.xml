@@ -22,7 +22,7 @@
     if (isLoading || newValue == '') {
         return;
     }
-
+	
     // Pega o sys_id do treinamento selecionado
     var trainingNameSysId = g_form.getValue('choose_the_training_that_you_want_to_enroll_in');
     console.log("Rodou e temos o training: " + trainingNameSysId);
@@ -33,7 +33,7 @@
 
 
     // Limpa o campo training_schedules
-    g_form.clearOptions('training_schedules');
+    g_form.clearOptions('training_schedules_dates');
     console.log("Limpou as opcoes");
 
     // Busca as datas disponíveis para o treinamento selecionado
@@ -41,8 +41,6 @@
     gaToShowDates.addParam('sysparm_name', 'getAvailableDates');
     gaToShowDates.addParam('sysparm_training_name', trainingNameSysId);
     console.log("Passou os parametros do GlideAjax");
-
-    //var dates = gaToShowDates.getXMLAnswer(_getResponseDates);
 
     gaToShowDates.getXMLAnswer(function(response) {
 		var dates = JSON.parse(response); // Converte a resposta em um array de datas
@@ -62,50 +60,77 @@
 					alert('Você já se matriculou 3 vezes neste curso. Não é possível se matricular novamente.');
 					g_form.clearOptions('training_schedules');
 				} else {
-					dates.forEach(function(date) {
-					console.log("Valor da data ao final da validacao" + date);
-					g_form.addOption('training_schedules', date, date); // Adiciona as opções ao Select Box
-					});
+
+					new Promise(function(resolve, reject) {
+                    try {
+                        dates.forEach(function(date) {
+                            console.log("Valor da data ao final da validação: " + date);
+                            g_form.addOption('training_schedules_dates', date, date); // Adiciona as opções ao Select Box
+                        });
+                        resolve(); // Resolve a Promise após adicionar todas as opções
+                    } catch (error) {
+                        reject(error); // Rejeita a Promise em caso de erro
+                    }
+                });
+
+				var trainingDate = g_form.getValue('training_schedules_dates');
+				console.log("Valor data função onChange:" + trainingDate);
+
+				getSysIdToSubmitRecord(trainingNameSysId, trainingDate)
+				.then(function(setSchdulerSysId){
+
+				console.log("Valor do JSON " + setSchdulerSysId);
+				var jsonToString = JSON.parse(setSchdulerSysId);
+				console.log("Valor do array: " + jsonToString);
+				console.log("Valor do array 0 String: " + jsonToString[0]);
+				console.log("Valor do array 1 String: " + jsonToString[1]);
+				if(parseInt(jsonToString[1]) === 0) {
+					alert('As vagas para esse treinamento e/ou data já foram esgotadas.'); 
+				}else{
+					console.log("Usuário não está matriculado. Prosseguindo com a inscrição.");
+					console.log("(Submit) - SysId " + jsonToString[0]);
+					g_form.setValue('training_schedules_set', jsonToString[0]);
+				}
+				});
+
 				}
 			});
+
 		} else {
 			g_form.addOption('training_schedules', '', 'Nenhuma data disponível'); // Mensagem se não houver datas
 		}
+
+
+
+
     });
 
-
+}
     //Type appropriate comment here, and begin script below
 
-	function checkUserParticipationInTraining(trainingNameSysId, userId , trainingDate) {
-		
-		//var trainingDate = g_form.getValue('training_schedules');
-		//console.log("Valor data funcao check: " + trainingDate);
+	function getSysIdToSubmitRecord(trainingNameSysId, trainingDate) {
+    return new Promise(function(resolve, reject) {
+        var gaScheduler = new GlideAjax('AooPemyUtilsAjax');
+        gaScheduler.addParam('sysparm_name', 'getSchedulerSysId');
+        gaScheduler.addParam('sysparm_training_date', trainingDate);
+        gaScheduler.addParam('sysparm_training_name', trainingNameSysId);
 
-		var isUserAlreadyParticipate = false;
+        gaScheduler.getXMLAnswer(function(registrationResponse) {
+            console.log("(Submit) Response: " + registrationResponse);
+            var arrayResponse = registrationResponse.split(',');
+            resolve(arrayResponse); // Resolve a Promise com a resposta
+        });
+    });
 
-		var gaRegistration = new GlideAjax('AooPemyUtilsAjax');
-		gaRegistration.addParam('sysparm_name', 'isUserRegistered');
-		gaRegistration.addParam('sysparm_training_date', trainingDate);
-		gaRegistration.addParam('sysparm_training_name', trainingNameSysId);
-		gaRegistration.addParam('sysparm_user', userId);
-
-		isUserAlreadyParticipate = gaRegistration.getXMLAnswer(function(registrationResponse) {
-			var isUserAlreadyParticipate = registrationResponse;
-			return isUserAlreadyParticipate;
-		});	
-			
-		console.log("Usuario ja esta participando do treinamento? " + isUserAlreadyParticipate);
-		return isUserAlreadyParticipate;
-	}
-
-}]]></script>
+}
+]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 13:00:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b199d427835712106b4ccad6feaad36d</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>FieldRulesAjax</sys_name>
         <sys_overrides/>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
@@ -113,11 +138,11 @@
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>catalog_script_client_b199d427835712106b4ccad6feaad36d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-31 14:02:50</sys_updated_on>
+        <sys_updated_on>2025-01-31 16:46:00</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
-        <va_supported>true</va_supported>
+        <va_supported>false</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>
