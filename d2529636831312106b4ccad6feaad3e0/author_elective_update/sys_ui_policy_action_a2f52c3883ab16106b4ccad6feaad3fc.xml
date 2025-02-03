@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>maximum_number_of_applications</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 10:59:58</sys_created_on>
+        <sys_id>a2f52c3883ab16106b4ccad6feaad3fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>maximum_number_of_applications</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a2f52c3883ab16106b4ccad6feaad3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 10:59:58</sys_updated_on>
+        <table>x_1590789_aoopemy_training_schedules</table>
+        <ui_policy display_value="Mandatory Fields">46952c3883ab16106b4ccad6feaad3f3</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=a2f52c3883ab16106b4ccad6feaad3fc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</application>
+        <file_path/>
+        <instance_id>908648a61b4dce1819254089bd4bcb5d</instance_id>
+        <instance_name>dev248733</instance_name>
+        <name>sys_ui_policy_action_a2f52c3883ab16106b4ccad6feaad3fc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>maximum_number_of_applications</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-03 10:59:58</sys_created_on><sys_id>a2f52c3883ab16106b4ccad6feaad3fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>maximum_number_of_applications</sys_name><sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package><sys_policy/><sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope><sys_update_name>sys_ui_policy_action_a2f52c3883ab16106b4ccad6feaad3fc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-03 10:59:58</sys_updated_on><table>x_1590789_aoopemy_training_schedules</table><ui_policy display_value="Mandatory Fields">46952c3883ab16106b4ccad6feaad3f3</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=a2f52c3883ab16106b4ccad6feaad3fc"/></record_update>]]></payload>
+        <payload_hash>1295379274</payload_hash>
+        <record_name>maximum_number_of_applications</record_name>
+        <reverted_from/>
+        <source>0fa654c7831b12106b4ccad6feaad317</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 10:59:58</sys_created_on>
+        <sys_id>2ef52c3883ab16106b4ccad6feaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194cb77911e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 10:59:58</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>22f52c3804ab1610aebe2523596286fe</update_guid>
+        <update_guid_history>22f52c3804ab1610aebe2523596286fe:1295379274</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 11:08:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>37f93dc8ceb349258242ed55d4f0f889</sys_id>
+        <sys_metadata>a2f52c3883ab16106b4ccad6feaad3fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>maximum_number_of_applications</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_parent display_value="Mandatory Fields">46952c3883ab16106b4ccad6feaad3f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_scope_delete display_value="">c0da6452bba0439b9a78310e0c7e5249</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_a2f52c3883ab16106b4ccad6feaad3fc</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_a2f52c3883ab16106b4ccad6feaad3fc">2ef52c3883ab16106b4ccad6feaad3fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 11:08:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -11,7 +11,7 @@
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>300</order>
+        <order>50</order>
         <reverse_if_false>false</reverse_if_false>
         <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
@@ -21,22 +21,22 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>Read Only if Have Value</short_description>
+        <short_description>Mandatory Fields</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-02-03 07:23:34</sys_created_on>
+        <sys_created_on>2025-02-03 10:58:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3f44732c83a716106b4ccad6feaad373</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Read Only if Have Value</sys_name>
+        <sys_id>46952c3883ab16106b4ccad6feaad3f3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Mandatory Fields</sys_name>
         <sys_overrides/>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
-        <sys_update_name>sys_ui_policy_3f44732c83a716106b4ccad6feaad373</sys_update_name>
+        <sys_update_name>sys_ui_policy_46952c3883ab16106b4ccad6feaad3f3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-03 11:07:29</sys_updated_on>
+        <sys_updated_on>2025-02-03 11:05:01</sys_updated_on>
         <table>x_1590789_aoopemy_training_schedules</table>
         <ui_type>0</ui_type>
         <view/>
