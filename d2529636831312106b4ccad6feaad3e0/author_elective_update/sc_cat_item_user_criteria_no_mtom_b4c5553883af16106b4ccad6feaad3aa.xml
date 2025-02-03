@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Enroll in trainings">07656787839312106b4ccad6feaad3f0</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 14:31:06</sys_created_on>
+        <sys_id>b4c5553883af16106b4ccad6feaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enroll in trainings.Catalog Acess Control</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_b4c5553883af16106b4ccad6feaad3aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 14:31:06</sys_updated_on>
+        <user_criteria display_value="Catalog Acess Control">18e5193883af16106b4ccad6feaad33b</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</application>
+        <file_path/>
+        <instance_id>908648a61b4dce1819254089bd4bcb5d</instance_id>
+        <instance_name>dev248733</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_b4c5553883af16106b4ccad6feaad3aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Enroll in trainings">07656787839312106b4ccad6feaad3f0</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-03 14:31:06</sys_created_on><sys_id>b4c5553883af16106b4ccad6feaad3aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enroll in trainings.Catalog Acess Control</sys_name><sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package><sys_policy/><sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_b4c5553883af16106b4ccad6feaad3aa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-03 14:31:06</sys_updated_on><user_criteria display_value="Catalog Acess Control">18e5193883af16106b4ccad6feaad33b</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>2027054739</payload_hash>
+        <record_name>Enroll in trainings.Catalog Acess Control</record_name>
+        <reverted_from/>
+        <source>0fa654c7831b12106b4ccad6feaad317</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 14:31:07</sys_created_on>
+        <sys_id>2346117883af16106b4ccad6feaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194cc38e1750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 14:31:07</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>2746117802af1610a4b2a2696dc63fc3</update_guid>
+        <update_guid_history>2746117802af1610a4b2a2696dc63fc3:2027054739</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Enroll in trainings.Catalog Acess Control">cab6d57883af16106b4ccad6feaad379</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 14:32:55</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>4600a33c2a9a47dca3a59ab90ee6ad44</sys_id>
+        <sys_metadata>b4c5553883af16106b4ccad6feaad3aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enroll in trainings.Catalog Acess Control</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_scope_delete display_value="">c0da6452bba0439b9a78310e0c7e5249</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_b4c5553883af16106b4ccad6feaad3aa</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_b4c5553883af16106b4ccad6feaad3aa">2346117883af16106b4ccad6feaad3c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 14:32:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
