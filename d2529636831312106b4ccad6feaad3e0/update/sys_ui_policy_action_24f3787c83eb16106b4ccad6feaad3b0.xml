@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>reproval_reason</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 12:01:14</sys_created_on>
+        <sys_id>24f3787c83eb16106b4ccad6feaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reproval_reason</sys_name>
+        <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_24f3787c83eb16106b4ccad6feaad3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 12:01:14</sys_updated_on>
+        <table>x_1590789_aoopemy_training_enrollments</table>
+        <ui_policy display_value="Hide when empty">a5d3b47c83eb16106b4ccad6feaad3e5</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=24f3787c83eb16106b4ccad6feaad3b0"/>
+</record_update>

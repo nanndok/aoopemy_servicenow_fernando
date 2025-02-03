@@ -58,6 +58,8 @@
 		current.setAbortAction(true);
 	}
 
+	current.setValue('available_slots',current.getValue('maximum_number_of_applications'));
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -66,7 +68,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b8a9852f831b12106b4ccad6feaad35e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>ValidadeTrainingSchedulerDate</sys_name>
         <sys_overrides/>
         <sys_package display_value="AooPemy" source="x_1590789_aoopemy">d2529636831312106b4ccad6feaad3e0</sys_package>
@@ -74,7 +76,7 @@
         <sys_scope display_value="AooPemy">d2529636831312106b4ccad6feaad3e0</sys_scope>
         <sys_update_name>sys_script_b8a9852f831b12106b4ccad6feaad35e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-03 10:56:43</sys_updated_on>
+        <sys_updated_on>2025-02-03 11:53:25</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
